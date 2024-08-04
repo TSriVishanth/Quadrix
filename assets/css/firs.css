@@ -1,0 +1,248 @@
+:root {
+  --colorA: #F6BABA;
+  --colorB: #2A563F;
+  --colorC: #FB7761;
+  --colorD: #E3D5BB;
+  --colorE: #91D4DD;
+  --colorF: #033E56;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes circleFill {
+  to {
+    stroke-dasharray: 188.4 188.4;
+  }
+}
+@keyframes circleFillA {
+  to {
+    stroke-dasharray: 0 188.4;
+  }
+}
+@keyframes fadeInText {
+  30% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+[class*=cone] {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+[class*=cone]::before {
+  content: "";
+  border-radius: 50em;
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+}
+
+.cone_top-left::before {
+  top: 0;
+  left: 0;
+  background: conic-gradient(transparent 75%, var(--c) 75%, var(--c) 100%);
+}
+
+.cone_top-right::before {
+  top: 0;
+  left: -100%;
+  background: conic-gradient(transparent 0%, var(--c) 0%, var(--c) 25%, transparent 25%);
+}
+
+.cone_bottom-right::before {
+  bottom: 0;
+  left: -100%;
+  background: conic-gradient(transparent 25%, var(--c) 25%, var(--c) 50%, transparent 50%);
+}
+
+.cone_bottom-left::before {
+  left: 0;
+  bottom: 0;
+  background: conic-gradient(transparent 50%, var(--c) 50%, var(--c) 75%, transparent 75%);
+}
+
+.cone_in-clockwise::before {
+  transform: rotate(-90deg);
+  animation: rotate 1s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+}
+
+.cone_in-counterclockwise::before {
+  transform: rotate(90deg);
+  animation: rotate 1s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+}
+
+.cone-a {
+  grid-column: 6;
+  grid-row: 1;
+  --c: var(--colorA);
+}
+
+.cone-b {
+  grid-column: 6;
+  grid-row: 2;
+  --c: var(--colorB);
+}
+
+.cone-c {
+  grid-column: 5;
+  grid-row: 2;
+  --c: var(--colorC);
+}
+.cone-c::before {
+  animation-delay: 0.5s;
+}
+
+.cone-d {
+  grid-column: 5;
+  grid-row: 3;
+  --c: var(--colorD);
+}
+.cone-d::before {
+  animation-delay: 0.5s;
+}
+
+.cone-e {
+  grid-column: 4;
+  grid-row: 1;
+  --c: var(--colorE);
+}
+.cone-e::before {
+  animation-delay: 1s;
+}
+
+.cone-f {
+  grid-column: 4;
+  grid-row: 2;
+  --c: var(--colorF);
+}
+.cone-f::before {
+  animation-delay: 1s;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.circle svg {
+  transform: rotate(-90deg);
+}
+.circle circle {
+  fill: none;
+  stroke-width: 60;
+}
+
+.circleColored {
+  grid-column: 4;
+  grid-row: 3;
+}
+.circleColored circle {
+  stroke: var(--colorA);
+  stroke-dasharray: 0 188.4;
+  animation: circleFill 1s cubic-bezier(0.645, 0.045, 0.355, 1) 1s forwards;
+}
+
+.circleImageA {
+  grid-column: 5;
+  grid-row: 1;
+}
+.circleImageA circle {
+  stroke: #fff;
+  stroke-dasharray: 188.4 188.4;
+  animation: circleFillA 1s cubic-bezier(0.645, 0.045, 0.355, 1) 1s forwards;
+}
+.circleImageA img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 50em;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0.99);
+}
+
+.circleImageB {
+  grid-column: 6;
+  grid-row: 3;
+}
+.circleImageB circle {
+  stroke: #fff;
+  stroke-dasharray: 188.4 188.4;
+  animation: circleFillA 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+}
+.circleImageB img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 50em;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0.99);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  grid-template-rows: repeat(3, 120px);
+}
+
+.content {
+  grid-column: 1/span 3;
+  grid-row: 1/span 3;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  font-family: "Merriweather";
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 40px;
+  transform: translateX(30px);
+  opacity: 0;
+  line-height: 1.3;
+  animation: fadeInText 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards 1s;
+  margin-bottom: 0;
+}
+
+p {
+  transform: translateX(30px);
+  opacity: 0;
+  animation: fadeInText 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards 1.2s;
+}
+
+@media (max-width: 992px) {
+  .form-group.mobile-v {
+    min-height: 120px;
+    position: relative;
+  }
+  .form-group.mobile-v .Send_Btn {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+}/*# sourceMappingURL=firs.css.map */

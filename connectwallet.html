@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quadrix-Connect Wallet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="assets/css/fontawesome-v6.1.1/css/all.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css">
+
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Audiowide -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/quadrix.css">
+</head>
+
+<body class="inner-bg">
+    
+    <!-- header -->
+    <header class="header-fixed header">
+        <nav class="container navbar  navbar-expand-lg ">
+            <div class="nav-logo ">
+                <a class="navbar-brand" href="index.html">
+                    <div class="">
+                        <img src="assets/images/logo.svg" class="logo" alt="">
+                        <div class="">
+                            <h2>QUADRIX</h2>
+                            <h5>SWAP</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" aria-expanded="false">
+                <img src="assets/images/menu.png" alt="">
+            </button>
+            <div class="navbar-collapse  collapse nav-mobile">
+                <div class="nav-bar justify-content-end">
+                    <div class="">
+                        <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                            Connect Wallet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas canvas-pmg offcanvas-end" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header"> <button type="button" class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav-bar">
+                        <div class="">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                                Connect Wallet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- BANNER -->
+    <button onclick="sideBar()" class="side-b">
+        <img src="assets/images/sidebarmenu.png" alt="" class="d-block d-lg-none">
+    </button>
+    <main id="sideBar" class="part-main cal">
+        <section class="banner-bg">
+            <div class="container">
+                <div class="d-flex ">
+                    <!-- SIDE-BAR -->
+                    <div class="sidebar">
+                        <div class="primary-sidebar">
+                            <ul>
+                                <li>
+                                    <a href="#" class="active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Exchange <i class="fa-solid fa-chevron-down exchange"></i>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Staking <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Trade Pool <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a>
+
+                                </li>
+                                <li> <a href="#">
+                                        Digital Investories <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- MAIN-SECTION -->
+                    <div class="main-grid">
+                        <div class="swap-wrapper">
+                            <div class="innerbox-bg">
+                                <div class="heading">
+                                    <h2>Connect Wallet</h2>
+                                </div>
+                                <div class="connect-wallet-mainwrapper">
+                                    <div class="connect-wallet-subwrapper">
+                                        <div class="connect-wallet-box">
+                                            <div class="thumb">
+                                                <img src="assets/images/meta.png" alt="">
+                                            </div>
+                                            <h1>Metamask</h1>
+                                            <p>Trusted by 12000 Peoples 
+                                                Around Globe</p>
+                                        </div>
+                                        <div class="connect-wallet-box">
+                                            <div class="thumb">
+                                                <img src="assets/images/trust.png" alt="">
+                                            </div>
+                                            <h1>Trust Wallet</h1>
+                                            <p>Trusted by 12000 Peoples 
+                                                Around Globe</p>
+                                        </div>
+                                        <div class="connect-wallet-box">
+                                            <div class="thumb">
+                                                <img src="assets/images/coin.png" alt="">
+                                            </div>
+                                            <h1>Coinbase Wallet</h1>
+                                            <p>Trusted by 12000 Peoples 
+                                                Around Globe</p>
+                                        </div>
+                                        <div class="connect-wallet-box flex-a">
+                                            <h1>Show more</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-foot">
+        <div class="container">
+            <div class="social-wrapper">
+                <div class="">
+                    <p>Copyright@2022 All Right Reserved</p>
+                  
+                </div>
+                <div class="social-icon">
+                    <a href="#">
+                        <img src="assets/images/sm.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/sm3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/sm2.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Script files-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ANIMATION SCRIPT -->
+    <script src="assets/vendor/js/gsap.min.js"></script>
+    <script src="assets/vendor/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/vendor/js/ScrollTrigger.min.js"></script>
+
+    <!-- SLIDER -->
+    <script src="assets/vendor/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/qudrax.js"></script>
+</body>

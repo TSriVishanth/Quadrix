@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quadrix-ADDLIQUIDITY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="assets/css/fontawesome-v6.1.1/css/all.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css">
+
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Audiowide -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/quadrix.css">
+</head>
+
+<body class="inner-bg">
+
+    <!-- header -->
+    <header class="header-fixed header">
+        <nav class="container navbar  navbar-expand-lg ">
+            <div class="nav-logo ">
+                <a class="navbar-brand" href="index.html">
+                    <div class="">
+                        <img src="assets/images/logo.svg" class="logo" alt="">
+                        <div class="">
+                            <h2>QUADRIX</h2>
+                            <h5>SWAP</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" aria-expanded="false">
+                <img src="assets/images/menu.png" alt="">
+            </button>
+            <div class="navbar-collapse  collapse nav-mobile">
+                <div class="nav-bar justify-content-end">
+                    <div class="">
+                        <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                            Connect Wallet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas canvas-pmg offcanvas-end" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header"> <button type="button" class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav-bar">
+                        <div class="">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                                Connect Wallet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- BANNER -->
+    <button onclick="sideBar()" class="side-b">
+        <img src="assets/images/sidebarmenu.png" alt="" class="d-block d-lg-none">
+    </button>
+    <main id="sideBar" class="part-main cal">
+        <section class="banner-bg">
+
+            <div class="container">
+                <div class="d-flex ">
+                    <!-- SIDE-BAR -->
+                    <div class="sidebar">
+                        <div class="primary-sidebar">
+                            <ul>
+                                <li>
+                                    <a href="#" class="active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Exchange <i class="fa-solid fa-chevron-down exchange"></i>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Staking <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Trade Pool <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a>
+
+                                </li>
+                                <li> <a href="#">
+                                        Digital Investories <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- MAIN-SECTION -->
+                    <div class="main-grid">
+                        <div class="swap-wrapper">
+                            <div class="innerbox-bg">
+                                <div class="heading flex-d">
+                                    <h2>Add Liquidity</h2>
+                                    <a href="#" class="bck-ar">
+                                        <span>
+                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.524321 4.377L4.93292 0.363365C5.00648 0.296361 5.10301 0.260243 5.20249 0.262501C5.30196 0.26476 5.39675 0.305222 5.4672 0.375495L5.47174 0.380247C5.50601 0.414317 5.53299 0.455002 5.55104 0.499829C5.56909 0.544655 5.57784 0.592686 5.57674 0.640997C5.57564 0.689309 5.56473 0.736893 5.54466 0.780854C5.52459 0.824815 5.4958 0.864235 5.46001 0.896714L1.30851 4.67603L5.28425 8.63831C5.31852 8.67238 5.3455 8.71307 5.36356 8.75789C5.38161 8.80272 5.39035 8.85075 5.38925 8.89906C5.38816 8.94737 5.37724 8.99496 5.35718 9.03892C5.33711 9.08288 5.30831 9.1223 5.27253 9.15478L5.26778 9.15932C5.19422 9.22632 5.09769 9.26244 4.99821 9.26018C4.89873 9.25792 4.80394 9.21746 4.7335 9.14719L0.511594 4.93761C0.474464 4.90059 0.445238 4.85641 0.425688 4.80776C0.406138 4.75911 0.396671 4.707 0.397861 4.65458C0.399051 4.60216 0.410874 4.55053 0.432611 4.50282C0.454349 4.4551 0.485549 4.4123 0.524321 4.377Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                      Back
+                                    </a>
+                                </div>
+                                <form action="" class="form-wrapper">
+                                    <div class="form-flex form-wi">
+                                        <div class="form-box ">
+                                            <label for="exampleInputEmail1" class="">INPUT</label>
+                                            <div class="input-group border-gradient mb-2">
+                                                <input type="text" class="form-control brrr" placeholder="100"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                                                <span class="input-group-text  brrr" id="basic-addon2">
+                                                    <span>Max</span>
+                                                    <select id="inputState" class="form-control custom-select">
+                                                        <option selected="" disabled="" hidden="">BTC
+                                                        </option>
+                                                        <option>USDT</option>
+                                                        <option>ETH</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <small>Balance: $2,099.90</small>
+                                        </div>
+                                        <div class="form-box">
+                                            <label for="exampleInputEmail1" class="">FOR</label>
+                                            <div class="input-group border-gradient mb-2">
+                                                <input type="text" class="form-control brrr" placeholder="100"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <span class="input-group-text  brrr" id="basic-addon2">
+                                                    <span>Max</span>
+                                                    <select id="inputState" class="form-control custom-select">
+                                                        <option selected="" disabled="" hidden="">USDT
+                                                        </option>
+                                                        <option>BTC</option>
+                                                        <option>ETH</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <small>Balance: $2,099.90</small>
+                                        </div>
+                                       
+                                        <div class="">
+                                            <a href="#" class="primary-btn  px-4 mt-4" data-bs-toggle="modal"
+                                                data-bs-target="#connectwallet">
+                                                Add Liquidity
+                                            </a>
+                                        </div>
+                                        <div class="swap-btn">
+                                            <img src="assets/images/btc.png" alt="">
+                                            <img src="assets/images/warrow.png" alt="">
+                                            <img src="assets/images/dollar.png" alt="">
+                                        </div>
+                                        <div class="btc-details">
+                                            <p>PRICE</p>
+                                            <h6>1.17485 BTC per USDT</h6>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="bottom-b">
+                                    <div class="">
+                                        <h4>Minimum Received</h4>
+                                        <h5>4.899 BTC</h5>
+                                    </div>
+                                    <div class="">
+                                        <h4>Price Impact</h4>
+                                        <h5>99.69%</h5>
+                                    </div>
+                                    <div class="">
+                                        <h4>Liquidity Provider Fee</h4>
+                                        <h5>0.098 USDT</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-foot">
+        <div class="container">
+            <div class="social-wrapper">
+                <div class="">
+                    <p>Copyright@2022 All Right Reserved</p>
+                </div>
+                <div class="social-icon">
+                    <a href="#">
+                        <img src="assets/images/sm.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/sm3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/sm2.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Script files-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ANIMATION SCRIPT -->
+    <script src="assets/vendor/js/gsap.min.js"></script>
+    <script src="assets/vendor/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/vendor/js/ScrollTrigger.min.js"></script>
+
+    <!-- SLIDER -->
+    <script src="assets/vendor/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/qudrax.js"></script>
+</body>

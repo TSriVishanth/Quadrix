@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quadrix-SELECTBLOCKCHAIN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="assets/css/fontawesome-v6.1.1/css/all.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css">
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Nunito:wght@300;400;500;600;700;800;900;1000&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Audiowide -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/quadrix.css">
+</head>
+
+<body class="inner-bg">
+    <!-- header -->
+    <header class="header-fixed header">
+        <nav class="container navbar  navbar-expand-lg ">
+            <div class="nav-logo ">
+                <a class="navbar-brand" href="index.html">
+                    <div class="">
+                        <img src="assets/images/logo.svg" class="logo" alt="">
+                        <div class="">
+                            <h2>QUADRIX</h2>
+                            <h5>SWAP</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" aria-expanded="false">
+                <img src="assets/images/menu.png" alt="">
+            </button>
+            <div class="navbar-collapse  collapse nav-mobile">
+                <div class="nav-bar justify-content-end">
+                    <div class="">
+                        <a href="connectwallet.html" class="primary-btn d-none" data-bs-target="#connectwallet.html">
+                            Connect Wallet
+                        </a>
+                        <div class="profile-details">
+                            <div class="thumb">
+                                <img src="assets/images/profile.png" alt="">
+                            </div>
+                            <div class="thumb-num">
+                                0x00a..B629F
+                            </div>
+                        </div>
+                        <button href="#" class="setting-header" data-bs-target="#setting" data-bs-toggle="modal">
+                            <svg width="21" height="21" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_48_1472)">
+                                    <path
+                                        d="M12.0458 5.0365C12.5428 2.98783 15.4572 2.98783 15.9542 5.0365C16.0287 5.34427 16.1749 5.63008 16.3808 5.87067C16.5867 6.11126 16.8465 6.29983 17.1391 6.42104C17.4317 6.54224 17.7487 6.59266 18.0644 6.56818C18.3801 6.5437 18.6856 6.44502 18.956 6.28017C20.7562 5.1835 22.8177 7.24383 21.721 9.04517C21.5564 9.31543 21.4579 9.62073 21.4334 9.93624C21.409 10.2517 21.4594 10.5686 21.5804 10.8609C21.7015 11.1533 21.8899 11.413 22.1302 11.6189C22.3705 11.8248 22.656 11.9711 22.9635 12.0458C25.0122 12.5428 25.0122 15.4572 22.9635 15.9542C22.6557 16.0287 22.3699 16.1749 22.1293 16.3808C21.8887 16.5867 21.7002 16.8465 21.579 17.1391C21.4578 17.4317 21.4073 17.7487 21.4318 18.0644C21.4563 18.3801 21.555 18.6856 21.7198 18.956C22.8165 20.7562 20.7562 22.8177 18.9548 21.721C18.6846 21.5564 18.3793 21.4579 18.0638 21.4334C17.7483 21.409 17.4314 21.4594 17.1391 21.5804C16.8467 21.7015 16.587 21.8899 16.3811 22.1302C16.1752 22.3705 16.0289 22.656 15.9542 22.9635C15.4572 25.0122 12.5428 25.0122 12.0458 22.9635C11.9713 22.6557 11.8251 22.3699 11.6192 22.1293C11.4133 21.8887 11.1535 21.7002 10.8609 21.579C10.5683 21.4578 10.2513 21.4073 9.93558 21.4318C9.61986 21.4563 9.31438 21.555 9.044 21.7198C7.24383 22.8165 5.18233 20.7562 6.279 18.9548C6.44362 18.6846 6.54214 18.3793 6.56656 18.0638C6.59099 17.7483 6.54062 17.4314 6.41955 17.1391C6.29848 16.8467 6.11014 16.587 5.86982 16.3811C5.6295 16.1752 5.34399 16.0289 5.0365 15.9542C2.98783 15.4572 2.98783 12.5428 5.0365 12.0458C5.34427 11.9713 5.63008 11.8251 5.87067 11.6192C6.11126 11.4133 6.29983 11.1535 6.42104 10.8609C6.54224 10.5683 6.59266 10.2513 6.56818 9.93558C6.5437 9.61986 6.44502 9.31438 6.28017 9.044C5.1835 7.24383 7.24383 5.18233 9.04517 6.279C10.2118 6.98833 11.7238 6.36067 12.0458 5.0365Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M14 17.5C15.933 17.5 17.5 15.933 17.5 14C17.5 12.067 15.933 10.5 14 10.5C12.067 10.5 10.5 12.067 10.5 14C10.5 15.933 12.067 17.5 14 17.5Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_48_1472">
+                                        <rect width="28" height="28" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas canvas-pmg offcanvas-end" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header"> <button type="button" class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav-bar">
+                        <div class="">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                                Connect Wallet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- BANNER -->
+    <button onclick="sideBar()" class="side-b">
+        <img src="assets/images/sidebarmenu.png" alt="" class="d-block d-lg-none">
+    </button>
+    <main id="sideBar" class="part-main cal">
+        <section class="banner-bg">
+            <div class="container">
+                <div class="d-flex ">
+                    <!-- SIDE-BAR -->
+                    <div class="sidebar">
+                        <div class="primary-sidebar">
+                            <ul>
+                                <li>
+                                    <a href="#" class="active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Exchange <i class="fa-solid fa-chevron-down exchange"></i>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Staking <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Trade Pool <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a>
+
+                                </li>
+                                <li> <a href="#">
+                                        Digital Investories <i class="fa-solid fa-chevron-down exchange"></i>
+                                    </a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- MAIN-SECTION -->
+                    <div class="main-grid">
+                        <div class="swap-wrapper">
+                            <div class="accordian-heading-wrapper">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#LUMOSX" type="button" role="tab" aria-controls="pills-home"
+                                            aria-selected="true">Select Blockchain</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#TORG" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">Enter your
+                                            Address</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#QBANKX" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">Confirm Token</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#BTCPMX" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">Locking Token</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#BTC" type="button" role="tab" aria-controls="pills-contact"
+                                            aria-selected="false">Finalise Token</button>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="accordian-wrapper">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade " id="LUMOSX" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <div class="">
+                                            <div class="bg-gray chain-wrapper">
+                                                <div class="inner">
+                                                    <input type="checkbox" checked name="cb" id="cb">
+                                                    <label for="cb">
+                                                        <svg viewBox="0 0 23 23">
+                                                            <circle class="xob" cx="11.5" cy="11.5" r="11"
+                                                                fill="#00DAA3" fill-opacity="0.05"
+                                                                stroke="url(#paint0_linear_386_89)" />
+                                                            <circle class="check" cx="11.5" cy="11.5" r="4.5"
+                                                                fill="url(#linear_386_89)" />
+                                                            <defs>
+                                                                <linearGradient id="paint0_linear_386_89" x1="0"
+                                                                    y1="11.5" x2="23" y2="11.5"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop stop-color="#286778" />
+                                                                    <stop offset="1" stop-color="#00DAA3" />
+                                                                </linearGradient>
+                                                                <linearGradient id="linear_386_89" x1="7" y1="11.5"
+                                                                    x2="16" y2="11.5" gradientUnits="userSpaceOnUse">
+                                                                    <stop stop-color="#286778" />
+                                                                    <stop offset="1" stop-color="#00DAA3" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="d-none">show Notes</span>
+                                                    </label>
+                                                </div>
+                                                <div class="coin-bnb gap-10">
+                                                    <img src="assets/images/bnb.svg" alt="">
+                                                    <h5>Binance Smart Chain</h5>
+                                                </div>
+                                                <h6>Select if your coin is an BEP-20 Token</h6>
+                                            </div>
+                                            <div class="bg-gray chain-wrapper">
+                                                <div class="inner">
+                                                    <input type="checkbox" name="aa" id="aa">
+                                                    <label for="aa">
+                                                        <svg viewBox="0 0 23 23">
+                                                            <circle class="xob" cx="11.5" cy="11.5" r="11"
+                                                                fill="#00DAA3" fill-opacity="0.05"
+                                                                stroke="url(#paint0_linear_386_89)" />
+                                                            <circle class="check" cx="11.5" cy="11.5" r="4.5"
+                                                                fill="url(#linear_386_89)" />
+                                                            <defs>
+                                                                <linearGradient id="paint0_linear_386_89" x1="0"
+                                                                    y1="11.5" x2="23" y2="11.5"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop stop-color="#286778" />
+                                                                    <stop offset="1" stop-color="#00DAA3" />
+                                                                </linearGradient>
+                                                                <linearGradient id="linear_386_89" x1="7" y1="11.5"
+                                                                    x2="16" y2="11.5" gradientUnits="userSpaceOnUse">
+                                                                    <stop stop-color="#286778" />
+                                                                    <stop offset="1" stop-color="#00DAA3" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="d-none">show Notes</span>
+                                                    </label>
+                                                </div>
+                                                <div class="coin-bnb gap-10">
+                                                    <img src="assets/images/bnb.svg" alt="">
+                                                    <h5>Binance Smart Chain</h5>
+                                                </div>
+                                                <h6>Select if your coin is an BEP-20 Token</h6>
+                                            </div>
+                                            <div class="bg-gray chain-wrapper">
+                                                <div class="inner">
+                                                    <input type="checkbox" name="bb" id="bb">
+                                                    <label for="bb">
+                                                        <svg viewBox="0 0 23 23">
+                                                            <circle class="xob" cx="11.5" cy="11.5" r="11"
+                                                                fill="#00DAA3" fill-opacity="0.05"
+                                                                stroke="url(#paint0_linear_386_89)" />
+                                                            <circle class="check" cx="11.5" cy="11.5" r="4.5"
+                                                                fill="url(#linear_386_89)" />
+                                                            <defs>
+                                                                <linearGradient id="paint0_linear_386_89" x1="0"
+                                                                    y1="11.5" x2="23" y2="11.5"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop stop-color="#286778" />
+                                                                    <stop offset="1" stop-color="#00DAA3" />
+                                                                </linearGradient>
+                                                                <linearGradient id="linear_386_89" x1="7" y1="11.5"
+                                                                    x2="16" y2="11.5" gradientUnits="userSpaceOnUse">
+                                                                    <stop stop-color="#286778" />
+                                                                    <stop offset="1" stop-color="#00DAA3" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                        </svg>
+                                                        <span class="d-none">show Notes</span>
+                                                    </label>
+                                                </div>
+                                                <div class="coin-bnb gap-10">
+                                                    <img src="assets/images/bnb.svg" alt="">
+                                                    <h5>Binance Smart Chain</h5>
+                                                </div>
+                                                <h6>Select if your coin is an BEP-20 Token</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade " id="TORG" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">
+                                        <div class="bg-gray ur-address-wrapper">
+                                            <div class="ur-address-detail">
+                                                <h1>Enter Your Address</h1>
+                                                <h6>Enter your Token address you would like to lock for</h6>
+                                                <div class="ip-wrapper">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Address">
+                                                        <button class="view-btn primary-btn">
+                                                            View
+                                                        </button>
+                                                    </div>
+                                                    <div class="addr">
+                                                        <h3>
+                                                            Example:
+                                                            <span> 0x9400Aa8eb5126d20CDE45</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade " id="QBANKX" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">
+                                        <div class="bg-gray ur-address-wrapper">
+                                            <div class="ur-address-detail">
+                                                <div class="dress-detail-wrapper">
+                                                    <div class="ess-detail-wrapper">
+                                                        <h1>Confirm your Token</h1>
+                                                        <div class="ip-wrapper">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Enter Address">
+                                                                <button class="view-btn primary-btn">
+                                                                    View
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ess-detail-wrapper">
+                                                        <h1>Token Found</h1>
+                                                        <div class="wrapper-ip">
+                                                            <div class="wrapper-ip-details">
+                                                                <h2>Token Name</h2>
+                                                                <h1>QBank</h1>
+                                                            </div>
+                                                            <div class="wrapper-ip-details">
+                                                                <h2>Token Ticker</h2>
+                                                                <h1>QBANKX</h1>
+                                                            </div>
+                                                            <div class="wrapper-ip-details">
+                                                                <h2>Total Supply</h2>
+                                                                <h1>1000000000000000</h1>
+                                                            </div>
+                                                            <div class="wrapper-ip-details">
+                                                                <h2>Your Balance</h2>
+                                                                <h1>0</h1>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade " id="BTCPMX" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">
+                                        <div class="bg-gray ur-address-wrapper">
+                                            <div class="ur-address-detail">
+                                                <div class="ur-address-header">
+                                                    <h1>I am Locking Token for</h1>
+                                                    <div class="ur-address-tab ">
+                                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link active" id="pills-home-tab"
+                                                                    data-bs-toggle="pill" data-bs-target="#pills-home"
+                                                                    type="button" role="tab" aria-controls="pills-home"
+                                                                    aria-selected="true">Myself</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" id="pills-profile-tab"
+                                                                    data-bs-toggle="pill"
+                                                                    data-bs-target="#pills-profile" type="button"
+                                                                    role="tab" aria-controls="pills-profile"
+                                                                    aria-selected="false">Someone Else</button>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                                <div class="tab-content" id="pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="pills-home"
+                                                        role="tabpanel" aria-labelledby="pills-home-tab">
+                                                        <div class="ip-wrapper">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Enter Address">
+                                                                <button class="view-btn primary-btn top-25">
+                                                                    View
+                                                                </button>
+                                                            </div>
+                                                            <div class="addr form-wrapper">
+                                                                <div class="form-flex">
+                                                                    <div class="form-box">
+                                                                        <label for="exampleInputEmail1" class="">Select
+                                                                            your listing</label>
+                                                                        <div class="input-group border-gradient mb-2">
+                                                                            <input type="text" class="form-control brrr"
+                                                                                placeholder="100"
+                                                                                aria-label="Recipient's username"
+                                                                                aria-describedby="basic-addon2">
+                                                                            <span class="input-group-text  brrr"
+                                                                                id="basic-addon2">
+                                                                                <select id="inputState"
+                                                                                    class="form-control custom-select">
+                                                                                    <option selected="" disabled=""
+                                                                                        hidden="">Marketing
+                                                                                    </option>
+                                                                                    <option>USDT</option>
+                                                                                    <option>ETH</option>
+                                                                                </select>
+                                                                            </span>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                        aria-labelledby="pills-profile-tab">
+                                                        <div class="ip-wrapper">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Enter Address">
+                                                                <button class="view-btn primary-btn top-25">
+                                                                    View
+                                                                </button>
+                                                            </div>
+                                                            <div class="addr form-wrapper">
+                                                                <div class="form-flex">
+                                                                    <div class="form-box">
+                                                                        <label for="exampleInputEmail1" class="">Select
+                                                                            your listing</label>
+                                                                        <div class="input-group border-gradient mb-2">
+                                                                            <input type="text" class="form-control brrr"
+                                                                                placeholder="100"
+                                                                                aria-label="Recipient's username"
+                                                                                aria-describedby="basic-addon2">
+                                                                            <span class="input-group-text  brrr"
+                                                                                id="basic-addon2">
+                                                                                <select id="inputState"
+                                                                                    class="form-control custom-select">
+                                                                                    <option selected="" disabled=""
+                                                                                        hidden="">Marketing
+                                                                                    </option>
+                                                                                    <option>USDT</option>
+                                                                                    <option>ETH</option>
+                                                                                </select>
+                                                                            </span>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show active" id="BTC" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">
+                                        <div class="bg-gray ur-address-wrapper">
+                                            <div class="ur-address-detail">
+                                                <div class="ur-address-header">
+                                                    <h1>I am Locking Token for</h1>
+                                                    <div class="ur-address-tab ">
+                                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link active" id="pills-home-tab"
+                                                                    data-bs-toggle="pill" data-bs-target="#pills-home"
+                                                                    type="button" role="tab" aria-controls="pills-home"
+                                                                    aria-selected="true">Myself</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" id="pills-profile-tab"
+                                                                    data-bs-toggle="pill"
+                                                                    data-bs-target="#pills-profile" type="button"
+                                                                    role="tab" aria-controls="pills-profile"
+                                                                    aria-selected="false">Someone Else</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-content" id="pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="pills-home"
+                                                        role="tabpanel" aria-labelledby="pills-home-tab">
+                                                        <div class="ip-wrapper gap-5">
+                                                            <div class="addr form-wrapper justify-self-unset">
+                                                                <div class="form-flex">
+                                                                    <div class="form-box max-unset">
+                                                                        <label for="exampleInputEmail1" class="">LOCK
+                                                                            AMOUNT</label>
+                                                                        <div class="input-group border-gradient mb-2">
+                                                                            <input type="text" class="form-control brrr"
+                                                                                placeholder="100"
+                                                                                aria-label="Recipient's username"
+                                                                                aria-describedby="basic-addon2">
+                                                                            <span class="input-group-text d-flex  brrr"
+                                                                                id="basic-addon2">
+                                                                                <span>Max</span>
+                                                                                <select id="inputState"
+                                                                                    class="form-control custom-select">
+                                                                                    <option selected="" disabled=""
+                                                                                        hidden="">BTC
+                                                                                    </option>
+                                                                                    <option>USDT</option>
+                                                                                    <option>ETH</option>
+                                                                                </select>
+                                                                            </span>
+                                                                        </div>
+                                                                        <small>Balance: $2,099.90</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="addr form-wrapper justify-self-unset">
+                                                                <div class="form-flex">
+                                                                    <div class="form-box max-unset">
+                                                                        <label for="exampleInputEmail1"
+                                                                            class="">QBANKX</label>
+                                                                        <div class="input-group border-gradient mb-2">
+                                                                            <input type="text" class="form-control brrr"
+                                                                                placeholder="100"
+                                                                                aria-label="Recipient's username"
+                                                                                aria-describedby="basic-addon2">
+                                                                            <span class="input-group-text d-flex  brrr"
+                                                                                id="basic-addon2">
+                                                                                <select id="inputState"
+                                                                                    class="form-control custom-select">
+                                                                                    <option selected="" disabled=""
+                                                                                        hidden="">BTC
+                                                                                    </option>
+                                                                                    <option>USDT</option>
+                                                                                    <option>ETH</option>
+                                                                                </select>
+                                                                            </span>
+                                                                        </div>
+                                                                        <small>Balance: $2,099.90</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                        aria-labelledby="pills-profile-tab">
+                                                        <div class="ip-wrapper gap-5">
+                                                            <div class="addr form-wrapper justify-self-unset">
+                                                                <div class="form-flex">
+                                                                    <div class="form-box max-unset">
+                                                                        <label for="exampleInputEmail1" class="">LOCK
+                                                                            AMOUNT</label>
+                                                                        <div class="input-group border-gradient mb-2">
+                                                                            <input type="text" class="form-control brrr"
+                                                                                placeholder="100"
+                                                                                aria-label="Recipient's username"
+                                                                                aria-describedby="basic-addon2">
+                                                                            <span class="input-group-text d-flex  brrr"
+                                                                                id="basic-addon2">
+                                                                                <span>Max</span>
+                                                                                <select id="inputState"
+                                                                                    class="form-control custom-select">
+                                                                                    <option selected="" disabled=""
+                                                                                        hidden="">BTC
+                                                                                    </option>
+                                                                                    <option>USDT</option>
+                                                                                    <option>ETH</option>
+                                                                                </select>
+                                                                            </span>
+                                                                        </div>
+                                                                        <small>Balance: $2,099.90</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="addr form-wrapper justify-self-unset">
+                                                                <div class="form-flex">
+                                                                    <div class="form-box max-unset">
+                                                                        <label for="exampleInputEmail1"
+                                                                            class="">QBANKX</label>
+                                                                        <div class="input-group border-gradient mb-2">
+                                                                            <input type="text" class="form-control brrr"
+                                                                                placeholder="100"
+                                                                                aria-label="Recipient's username"
+                                                                                aria-describedby="basic-addon2">
+                                                                            <span class="input-group-text d-flex  brrr"
+                                                                                id="basic-addon2">
+                                                                                <select id="inputState"
+                                                                                    class="form-control custom-select">
+                                                                                    <option selected="" disabled=""
+                                                                                        hidden="">BTC
+                                                                                    </option>
+                                                                                    <option>USDT</option>
+                                                                                    <option>ETH</option>
+                                                                                </select>
+                                                                            </span>
+                                                                        </div>
+                                                                        <small>Balance: $2,099.90</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="address-bottom-wrapper">
+                                                <div class="address-box-wrap">
+                                                    <div class="address-box-item">
+                                                        <h5>Status 1</h5>
+                                                        <h6>
+                                                            <span>
+                                                                <svg width="18" height="18" viewBox="0 0 18 18"
+                                                                    fill="none">
+                                                                    <g clip-path="url(#clip0_94_470)">
+                                                                        <path d="M3.75 9L7.5 12.75L15 5.25"
+                                                                            stroke="white" stroke-opacity="0.5"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_94_470">
+                                                                            <rect width="18" height="18" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                            </span>
+                                                            Approve
+                                                        </h6>
+                                                    </div>
+                                                    <div class="prog-svg">
+                                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M58.8281 30C58.8281 46.0163 45.8444 59 29.8281 59C13.8119 59 0.828125 46.0163 0.828125 30C0.828125 13.9838 13.8119 1.00002 29.8281 1.00002C45.8444 1.00002 58.8281 13.9838 58.8281 30ZM11.0598 30C11.0598 40.3655 19.4627 48.7683 29.8281 48.7683C40.1936 48.7683 48.5964 40.3655 48.5964 30C48.5964 19.6346 40.1936 11.2317 29.8281 11.2317C19.4627 11.2317 11.0598 19.6346 11.0598 30Z"
+                                                                fill="#D9D9D9" fill-opacity="0.16" />
+                                                            <path
+                                                                d="M28.9871 1.01219C25.1803 1.12253 21.4326 1.98158 17.9579 3.54029C14.4831 5.09901 11.3494 7.32686 8.73567 10.0967C6.12192 12.8664 4.07932 16.1239 2.72449 19.6831C1.36965 23.2423 0.72912 27.0335 0.839461 30.8402L11.0668 30.5438C10.9954 28.0801 11.41 25.6265 12.2868 23.3231C13.1636 21.0196 14.4856 18.9114 16.1771 17.1189C17.8687 15.3263 19.8968 13.8845 22.1456 12.8757C24.3944 11.8669 26.8198 11.311 29.2835 11.2396L28.9871 1.01219Z"
+                                                                fill="url(#paint0_linear_407_89)" />
+                                                            <defs>
+                                                                <linearGradient id="paint0_linear_407_89" x1="30.6675"
+                                                                    y1="58.9878" x2="28.9871" y2="1.01219"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop stop-color="#F2994A" />
+                                                                    <stop offset="1" stop-color="#F2C94C" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                        </svg>
+                                                        <h5>1</h5>
+                                                    </div>
+                                                    <div class="address-box-item">
+                                                        <h5>Final</h5>
+                                                        <h6>
+                                                            <span>
+                                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g clip-path="url(#clip0_94_473)">
+                                                                        <path
+                                                                            d="M14.168 9.16666H5.83464C4.91416 9.16666 4.16797 9.91285 4.16797 10.8333V15.8333C4.16797 16.7538 4.91416 17.5 5.83464 17.5H14.168C15.0884 17.5 15.8346 16.7538 15.8346 15.8333V10.8333C15.8346 9.91285 15.0884 9.16666 14.168 9.16666Z"
+                                                                            stroke="white" stroke-opacity="0.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M10.0013 14.1667C10.4615 14.1667 10.8346 13.7936 10.8346 13.3333C10.8346 12.8731 10.4615 12.5 10.0013 12.5C9.54106 12.5 9.16797 12.8731 9.16797 13.3333C9.16797 13.7936 9.54106 14.1667 10.0013 14.1667Z"
+                                                                            stroke="white" stroke-opacity="0.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M6.66797 9.16667V5.83333C6.66797 4.94928 7.01916 4.10143 7.64428 3.47631C8.2694 2.85119 9.11725 2.5 10.0013 2.5C10.8854 2.5 11.7332 2.85119 12.3583 3.47631C12.9834 4.10143 13.3346 4.94928 13.3346 5.83333V9.16667"
+                                                                            stroke="white" stroke-opacity="0.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_94_473">
+                                                                            <rect width="20" height="20" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+
+                                                            </span>
+                                                            Locked
+                                                        </h6>
+                                                    </div>
+                                                    <div class="address-box-item">
+                                                        <h5>Total Locked</h5>
+                                                        <h6>
+                                                            0 QBANKX
+                                                        </h6>
+                                                    </div>
+                                                    <div class="address-box-item">
+                                                        <h5>Unlock Time</h5>
+                                                        <h6>
+                                                            Wed, 08 Feb 2023
+                                                        </h6>
+                                                    </div>
+                                                    <div class="address-box-item">
+                                                        <h5>Fees</h5>
+                                                        <h6>
+                                                            0.12
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-foot">
+        <div class="container">
+            <div class="social-wrapper">
+                <div class="">
+                    <p>Copyright@2022 All Right Reserved</p>
+                </div>
+                <div class="social-icon">
+                    <a href="#">
+                        <img src="assets/images/sm.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/sm3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/sm2.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL POUP -->
+    <!-- Confirm Swap-->
+    <div class="modal quarix-modal fade" id="usd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Select Token</h5>
+                </div>
+                <div class="modal-body pb-0">
+                    <div class="select-token-wrapper">
+                        <div class="form-box">
+                            <div class="input-group border-gradient mb-2">
+                                <span class="input-group-text  brrr" id="basic-addon2">
+                                    <div class="form-control custom-select cs-cs" data-bs-target="#usd"
+                                        data-bs-toggle="modal">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.2493 12.25L9.63252 9.62851L12.2493 12.25ZM11.0827 6.125C11.0827 7.44004 10.5603 8.70121 9.63042 9.63108C8.70055 10.5609 7.43938 11.0833 6.12435 11.0833C4.80932 11.0833 3.54815 10.5609 2.61828 9.63108C1.68841 8.70121 1.16602 7.44004 1.16602 6.125C1.16602 4.80997 1.68841 3.5488 2.61828 2.61893C3.54815 1.68907 4.80932 1.16667 6.12435 1.16667C7.43938 1.16667 8.70055 1.68907 9.63042 2.61893C10.5603 3.5488 11.0827 4.80997 11.0827 6.125V6.125Z"
+                                                stroke="white" stroke-opacity="0.32" stroke-linecap="round" />
+                                        </svg>
+
+                                    </div>
+                                </span>
+                                <input type="text" class="form-control brrr" placeholder="search"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            </div>
+
+                        </div>
+                        <div class="token-list-wrapper">
+                            <div class="token-box">
+                                <div class="coin-details">
+                                    <div class="thumb">
+                                        <img src="assets/images/btc.svg" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h5>BTC</h5>
+                                        <h6>Bitcoin</h6>
+                                    </div>
+                                </div>
+                                <div class="coin-d">
+                                    <h4>0.00000000</h4>
+                                </div>
+                            </div>
+                            <div class="token-box">
+                                <div class="coin-details">
+                                    <div class="thumb">
+                                        <img src="assets/images/tether.svg" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h5>USDT</h5>
+                                        <h6>Binance Pegged USDT</h6>
+                                    </div>
+                                </div>
+                                <div class="coin-d">
+                                    <h4>0.00000000</h4>
+                                </div>
+                            </div>
+                            <div class="token-box">
+                                <div class="coin-details">
+                                    <div class="thumb">
+                                        <img src="assets/images/dollar.svg" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h5>USDC</h5>
+                                        <h6>USDC</h6>
+                                    </div>
+                                </div>
+                                <div class="coin-d">
+                                    <h4>0.00000000</h4>
+                                </div>
+                            </div>
+                            <div class="token-box">
+                                <div class="coin-details">
+                                    <div class="thumb">
+                                        <img src="assets/images/tether.svg" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h5>USDT</h5>
+                                        <h6>Binance Pegged USDT</h6>
+                                    </div>
+                                </div>
+                                <div class="coin-d">
+                                    <h4>0.00000000</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button class="token-list" data-bs-target="#manage" data-bs-toggle="modal">
+                        Manage Tokens
+                    </button>
+                    <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manage Token-->
+    <div class="modal quarix-modal fade" id="manage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Manage</h5>
+                </div>
+                <div class="modal-body pb-0">
+                    <div class="select-token-wrapper">
+                        <div class="list-token-wrapper">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Lists</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Tokens</button>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="form-box">
+                            <div class="input-group border-gradient mb-2">
+                                <input type="text" class="form-control brrr br-30 bg-gray"
+                                    placeholder="https:// or ipfs:// or ENS name" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="tokenlist-wrapper">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="pancake-list-wrapper">
+                                        <div class="pancake-list-item">
+                                            <div class="thumb">
+                                                <img src="assets/images/pancake.svg" alt="">
+                                            </div>
+                                            <div class="token-details">
+                                                <h5>PancakeSwap Extended</h5>
+                                                <p>291 tokens
+                                                    <span>
+                                                        <img src="assets/images/Setting.svg" alt="">
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="toggle-icon">
+                                                <input type="checkbox" id="toggle-btn-1">
+                                                <label for="toggle-btn-1"></label>
+                                            </div>
+                                        </div>
+                                        <div class="pancake-list-item">
+                                            <div class="thumb">
+                                                <img src="assets/images/pancake.svg" alt="">
+                                            </div>
+                                            <div class="token-details">
+                                                <h5>PancakeSwap Extended</h5>
+                                                <p>291 tokens
+                                                    <span>
+                                                        <img src="assets/images/Setting.svg" alt="">
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="toggle-icon">
+                                                <input type="checkbox" id="toggle-btn-2">
+                                                <label for="toggle-btn-2"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="toke-de">
+                                        <h4>0 Custom Tokens</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL POUP -->
+    <!-- Confirm Swap-->
+    <div class="modal quarix-modal fade" id="setting" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Setttings</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="setting-popup-body">
+                        <div class="heading-setting">
+                            <h2>GLOBAL</h2>
+                            <h3>Default Transaction Speed (GWEI)</h3>
+                        </div>
+                        <div class="setting-wrapper-btn">
+                            <button class="active">
+                                Standard (5)
+                            </button>
+                            <button>
+                                Fast (6)
+                            </button>
+                            <button>
+                                Instant(7)
+                            </button>
+                        </div>
+                        <div class="heading-setting">
+                            <h2>SWAPS & LIQUIDITY</h2>
+                            <h3>Slippage Tolerance</h3>
+                        </div>
+                        <div class="setting-wrapper-btn">
+                            <button class="active">
+                                0.1%
+                            </button>
+                            <button>
+                                0.5%
+                            </button>
+                            <button>
+                                1.0%
+                            </button>
+                            <button>
+                                1.5%
+                            </button>
+                        </div>
+                        <div class="form-set">
+                            <h5>Tx deadline (mins)</h5>
+                            <input type="text" class="form-control" placeholder="0.00">
+                        </div>
+                        <div class="form-set my-3">
+                            <h5>Expert Mode</h5>
+                            <div class="toggle-icon">
+                                <input type="checkbox" id="mode">
+                                <label for="mode"></label>
+                            </div>
+                        </div>
+                        <div class="form-set my-3">
+                            <h5>Disable Multihops</h5>
+                            <div class="toggle-icon">
+                                <input type="checkbox" id="modem">
+                                <label for="modem"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Confirm Swap-->
+    <div class="modal quarix-modal fade" id="confirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Confirm</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="setting-popup-body">
+                        <div class="heading-setting">
+                            <h2>You will Receive</h2>
+                        </div>
+                        <div class="setting-wrapper-btn">
+                            <div class="thumb-wrapper">
+                                <div class="thumb">
+                                    <img src="assets/images/btc.svg" alt="">
+                                </div>
+                                <div class="thumb">
+                                    <img src="assets/images/tether.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="token-count">
+                                <h5>0.025412</h5>
+                            </div>
+                        </div>
+                        <div class="heading-setting">
+                            <h2>BTC/USDT Pool Tokens</h2>
+                            <h3>Output is estimated. If the price changes by
+                                more than 0.8% your transaction will revert.</h3>
+                        </div>
+                        <div class="form-set mt-5">
+                            <h6>BTC Deposited</h6>
+                            <h5>0.045124 USDT</h5>
+                        </div>
+                        <div class="form-set my-3">
+                            <h6>USDT Deposited</h6>
+                            <h5>0.045124 USDT</h5>
+                        </div>
+                        <div class="form-set my-3">
+                            <h6>Rates</h6>
+                            <div class="text-end">
+                                <h5>1 BTC = 12.45 USDT</h5>
+                                <h5>1 USDT = 0.012541 BTC</h5>
+                            </div>
+                        </div>
+                        <div class="form-set my-3">
+                            <h6>Share of Pool</h6>
+                            <h5>0.00156245%</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Script files-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ANIMATION SCRIPT -->
+    <script src="assets/vendor/js/gsap.min.js"></script>
+    <script src="assets/vendor/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/vendor/js/ScrollTrigger.min.js"></script>
+
+    <!-- SLIDER -->
+    <script src="assets/vendor/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/qudrax.js"></script>
+</body>
